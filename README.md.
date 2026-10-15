@@ -1,0 +1,133 @@
+# 🚗 Real-Life Logic Building — Day 1
+
+## 🅿️ Problem: Parking Fee Calculator
+
+**Difficulty:** Basic  
+**Programming Language:** Java  
+**Series:** DSA Warrior — Real-Life Logic Building
+---
+## 📌 Problem Statement
+A parking lot charges customers based on their vehicle type and parking duration.
+
+Write a Java program to calculate the total parking fee according to the vehicle type and the number of hours the vehicle is parked.
+
+## 💰 Parking Charges
+
+### 🏍️ Bike
+- First hour: ₹20
+- Each additional hour: ₹10
+
+### 🚗 Car
+- First hour: ₹50
+- Each additional hour: ₹20
+
+### 🚚 Truck
+- First hour: ₹100
+- Each additional hour: ₹50
+---
+## 📋 Requirements
+
+1. Accept the vehicle type (`bike`, `car`, or `truck`).
+2. Accept the parking duration in hours.
+3. If the duration is greater than 0 and less than or equal to 1 hour, charge the first-hour fee.
+4. For every additional hour, add the applicable additional-hour charge.
+5. Reject zero or negative parking durations.
+6. Reject unsupported vehicle types.
+7. Display the total parking fee for valid inputs.
+---
+## 🧪 Examples
+### Example 1: Bike
+
+**Input**
+```text
+Vehicle: bike
+Duration: 1
+```
+
+**Output**
+```text
+Parking fees: ₹20
+```
+### Example 2: Car
+
+**Input**
+```text
+Vehicle: car
+Duration: 4
+```
+**Output**
+```text
+Parking fees: ₹110
+```
+
+**Explanation:** ₹50 for the first hour + ₹20 × 3 additional hours = ₹110.
+
+### Example 3: Truck
+
+**Input**
+```text
+Vehicle: truck
+Duration: 3
+```
+
+**Output**
+```text
+Parking fees: ₹200
+```
+
+**Explanation:** ₹100 for the first hour + ₹50 × 2 additional hours = ₹200.
+
+### Example 4: Invalid Duration
+
+**Input**
+```text
+Vehicle: bike
+Duration: 0
+```
+
+**Output**
+```text
+Invalid parking duration
+```
+
+### Example 5: Invalid Vehicle Type
+
+**Input**
+```text
+Vehicle: bus
+Duration: 2
+```
+
+**Output**
+```text
+Invalid vehicle type
+```
+---
+
+## 🎯 Your Challenge
+
+Solve this problem yourself before checking anyone else's solution.
+
+Try to handle all valid and invalid inputs correctly.
+
+## 🧠 Concepts to Practise
+
+- Java methods
+- `if-else` statements
+- `switch` statement
+- Arithmetic operations
+- User input using `Scanner`
+- Input validation
+---
+
+## 📤 How to Participate
+
+1. Write your own Java solution.
+2. Test it with the examples.
+3. Check additional edge cases.
+4. Share your solution with the group for review.
+
+**Remember:** Focus on understanding the logic, not just writing the code.
+---
+
+*Real-Life Logic Building Series | DSA Warrior*
