@@ -1,0 +1,55 @@
+import java.util.*;
+
+public class parkingCalculator {
+    public static int calculateFee(String vehicle, int duration) {
+        if (duration <= 0) {
+            System.out.println("Invalid parking duration");
+            return -1;
+        }
+
+        int fee = 0;
+        switch (vehicle.toLowerCase()) {
+            case "bike":
+                fee = 20; // first hour
+                if (duration > 1) {
+                    fee += (duration - 1) * 10;
+                }
+                break;
+
+            case "car":
+                fee = 50; // first hour
+                if (duration > 1) {
+                    fee += (duration - 1) * 20;
+                }
+                break;
+
+            case "truck":
+                fee = 100; // first hour
+                if (duration > 1) {
+                    fee += (duration - 1) * 50;
+                }
+                break;
+
+            default:
+                System.out.println("Invalid vehicle type");
+                return -1;
+        }
+
+        return fee;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Vehicle Type (bike/car/truck): ");
+        String vehicle = sc.next();
+
+        System.out.print("Enter Parking Duration (hours): ");
+        int duration = sc.nextInt();
+
+        int fee = calculateFee(vehicle, duration);
+        if (fee != -1) {
+            System.out.println("Parking fees: ₹" + fee);
+        }
+    }
+}
