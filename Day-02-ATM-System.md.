@@ -1,0 +1,132 @@
+# 💳 Real-Life Logic Building — Day 2
+
+## 🏧 Problem: ATM Cash Deposit & Withdrawal System
+
+**Difficulty:** Basic  
+**Programming Language:** Java  
+**Series:** DSA Warrior — Real-Life Logic Building
+
+---
+
+## 📌 Problem Statement
+
+Create a simple ATM system that allows a user to check their account balance, deposit money, and withdraw money.
+
+The program should accept the user's choice and perform the appropriate operation while ensuring that invalid transactions are handled correctly.
+
+## 📋 Requirements
+
+1. Start with an initial account balance of ₹5,000.
+2. Display a menu with these options:
+   - Check Balance
+   - Deposit Money
+   - Withdraw Money
+   - Exit
+3. For a deposit, accept an amount and add it to the account balance.
+4. For a withdrawal, check whether the account has sufficient funds before deducting the amount.
+5. Reject zero or negative deposit and withdrawal amounts.
+6. Display an appropriate message for an invalid menu choice.
+7. After a successful deposit or withdrawal, display the updated balance.
+8. Continue displaying the menu until the user chooses Exit.
+
+---
+
+## 🧪 Examples
+
+### Example 1: Check Balance
+
+**Input**
+```text
+Choice: 1
+```
+
+**Output**
+```text
+Current Balance: ₹5000
+```
+
+### Example 2: Deposit Money
+
+**Input**
+```text
+Choice: 2
+Deposit Amount: 1000
+```
+
+**Output**
+```text
+Deposit successful!
+Updated Balance: ₹6000
+```
+
+### Example 3: Withdraw Money
+
+**Input**
+```text
+Choice: 3
+Withdrawal Amount: 2000
+```
+
+**Output**
+```text
+Withdrawal successful!
+Updated Balance: ₹4000
+```
+
+*Note: Example 3 assumes the initial balance is ₹5,000 and no previous transaction has occurred.*
+
+### Example 4: Insufficient Balance
+
+**Input**
+```text
+Choice: 3
+Withdrawal Amount: 6000
+```
+
+**Output**
+```text
+Insufficient balance!
+```
+
+### Example 5: Invalid Amount
+
+**Input**
+```text
+Choice: 2
+Deposit Amount: -500
+```
+
+**Output**
+```text
+Invalid amount!
+```
+
+### Example 6: Exit
+
+**Input**
+```text
+Choice: 4
+```
+
+**Output**
+```text
+Thank you for using the ATM!
+```
+
+---
+
+## 🎯 Your Challenge
+
+Write a Java program to implement the ATM system. Handle all valid and invalid transactions correctly.
+
+**Concepts to practise:**
+- `if-else` statements
+- `switch` statements
+- Loops
+- Methods
+- User input using `Scanner`
+- Input validation
+
+---
+
+*DSA Warrior | Learn • Practice • Revise • Improve*
