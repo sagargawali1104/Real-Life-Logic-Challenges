@@ -1,0 +1,164 @@
+# 🛒 Day 3: Shopping Cart Discount Calculator
+
+**Difficulty:** Basic
+**Language:** Java
+**Series:** Code Army — Real-Life Logic Building
+
+---
+
+## 📌 Problem Statement
+
+Create a Shopping Cart Discount Calculator using Java.
+
+The program should accept the price of a product and the quantity purchased by a customer. It must calculate the total bill, apply a discount based on the total bill amount, and display the final amount the customer needs to pay.
+
+This problem simulates a real-world shopping checkout system.
+
+## 💰 Discount Rules
+
+Apply the discount based on the total bill:
+
+- **Total bill below ₹1,000:** No discount.
+- **Total bill from ₹1,000 to ₹4,999:** 10% discount.
+- **Total bill of ₹5,000 or above:** 20% discount.
+
+**Formula:**
+
+Total Bill = Product Price × Quantity
+
+Discount Amount = Total Bill × Discount Percentage ÷ 100
+
+Final Bill = Total Bill − Discount Amount
+
+---
+
+## 📋 Requirements
+
+1. Accept the product price from the user.
+2. Accept the quantity purchased.
+3. Reject zero or negative product prices.
+4. Reject zero or negative quantities.
+5. Calculate the total bill using the product price and quantity.
+6. Apply the correct discount according to the discount rules.
+7. Calculate the discount amount.
+8. Calculate the final bill after deducting the discount.
+9. Display the total bill, discount amount, final bill, and amount payable.
+10. Use clear messages for invalid inputs.
+
+---
+
+## 🧪 Examples
+
+### Example 1: 10% Discount
+
+**Input**
+```text
+Product price: 200
+Enter quantity: 6
+```
+
+**Calculation**
+
+- Total Bill = ₹200 × 6 = ₹1,200
+- Discount = 10% of ₹1,200 = ₹120
+- Final Bill = ₹1,200 − ₹120 = ₹1,080
+
+**Output**
+```text
+Total Bill: 1200
+Discount: 120
+Final Bill: 1080
+Customer needs to pay: 1080
+```
+
+### Example 2: No Discount
+
+**Input**
+```text
+Product price: 200
+Enter quantity: 3
+```
+
+**Calculation**
+
+- Total Bill = ₹200 × 3 = ₹600
+- Discount = ₹0
+- Final Bill = ₹600
+
+**Output**
+```text
+Total Bill: 600
+Discount: 0
+Final Bill: 600
+Customer needs to pay: 600
+```
+
+### Example 3: 20% Discount
+
+**Input**
+```text
+Product price: 1000
+Enter quantity: 6
+```
+
+**Calculation**
+
+- Total Bill = ₹1,000 × 6 = ₹6,000
+- Discount = 20% of ₹6,000 = ₹1,200
+- Final Bill = ₹6,000 − ₹1,200 = ₹4,800
+
+**Output**
+```text
+Total Bill: 6000
+Discount: 1200
+Final Bill: 4800
+Customer needs to pay: 4800
+```
+
+### Example 4: Invalid Product Price
+
+**Input**
+```text
+Product price: -200
+Enter quantity: 6
+```
+
+**Output**
+
+```text
+Invalid product price
+```
+
+### Example 5: Invalid Quantity
+
+**Input**
+```text
+Product price: 200
+Enter quantity: 0
+```
+
+**Output**
+```text
+Invalid quantity
+```
+
+---
+
+## 🎯 Your Challenge
+
+Implement this Shopping Cart Discount Calculator in Java.
+
+Try to solve the problem independently before checking anyone else's solution.
+
+### 🧠 Concepts to Practise
+
+- Variables and data types
+- User input using `Scanner`
+- Arithmetic operations
+- `if-else` statements
+- Percentage calculations
+- Input validation
+
+---
+
+**Code Army | Learn • Practice • Revise • Improve**
